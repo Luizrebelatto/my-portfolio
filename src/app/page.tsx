@@ -23,17 +23,17 @@ export default function Home() {
         </div>
       </header>
       <main style={{ display: 'flex' }}>
-          <div style={{ backgroundColor: 'green', alignItems: 'center', justifyContent: "center" }}>
+          <div style={{ alignItems: 'center', justifyContent: "space-around", display: "flex", flexDirection: 'column' }}>
             <div style={{ alignItems: "center" }}>
               <h1 style={{ textAlign: 'center' }}>Luiz Gabriel</h1>
               <p style={{ textAlign: 'center' }}>Mobile developer react native</p>
             </div>
 
-            <section className="mt-8">
+            <section style={{ marginLeft: 40, marginRight: 60, height: 200, width: 500 }}>
               <p className="text-lg font-medium text-gray-400">
                 Here are some of the projects I’m most proud of!
               </p>
-              <div className="mt-4 flex flex-wrap gap-4">
+              <div style={{ gap: 30, flexWrap: "wrap", alignItems: 'center', justifyContent: 'center', display: "flex" }}>
                 {projects.map((project) => (
                   <button
                     key={project.id}
