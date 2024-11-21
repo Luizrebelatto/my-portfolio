@@ -23,39 +23,36 @@ export default function Home() {
         </div>
       </header>
       <main style={{ display: 'flex' }}>
-        
-          <div>
-            <div>
-              <h1>Luiz Gabriel</h1>
-              <p>Mobile developer react native</p>
+          <div style={{ backgroundColor: 'green', alignItems: 'center', justifyContent: "center" }}>
+            <div style={{ alignItems: "center" }}>
+              <h1 style={{ textAlign: 'center' }}>Luiz Gabriel</h1>
+              <p style={{ textAlign: 'center' }}>Mobile developer react native</p>
             </div>
 
             <section className="mt-8">
-          <p className="text-lg font-medium text-gray-400">
-            Here are some of the projects I’m most proud of!
-          </p>
-          <div className="mt-4 flex flex-wrap gap-4">
-            {projects.map((project) => (
-              <button
-                key={project.id}
-                
-                className={styles.button}
-              >
-                <span className="text-xl">{project.icon}</span>
-                <span className="text-lg font-semibold">{project.name}</span>
-              </button>
-            ))}
-          </div>
+              <p className="text-lg font-medium text-gray-400">
+                Here are some of the projects I’m most proud of!
+              </p>
+              <div className="mt-4 flex flex-wrap gap-4">
+                {projects.map((project) => (
+                  <button
+                    key={project.id}
+                    
+                    className={styles.button}
+                  >
+                    <span className="text-xl">{project.icon}</span>
+                    <span className="text-lg font-semibold">{project.name}</span>
+                  </button>
+                ))}
+              </div>
             </section>
-            
           </div>
           <Image
-          src="/iphone.png"
-          alt="Description of the image"
-          width={350}
-          height={600}
+            src="/iphone.png"
+            alt="Description of the image"
+            width={350}
+            height={600}
           />
-      
       </main>
     </div>
   );
